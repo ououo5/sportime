@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Glame | Accueil </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+        background-color: #ff0000; /* Changer la couleur en rouge (#ff0000) */
+        padding: 30px;
+        text-align: center;
+        color: #fff; /* Changer la couleur du texte en blanc */
+    }
+    header h1 {
+        font-family: 'Times New Roman', serif; /* Changer la police en Times New Roman pour le titre */
+    }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        #banner {
+            background-color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+   	 #banner h1 {
+        font-family: 'Times New Roman', serif; /* Changer la police en Times New Roman */
+    }
+
+        #features {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        #features div {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+  	  #features h3 {
+        font-family: 'Times New Roman', serif; /* Changer la police en Times New Roman */
+        color: #ff0000; /* Garder la couleur rouge pour les titres dans #features */
+    }
+        #newsletter {
+            background-color: #f8f8f8;
+            padding: 30px;
+            text-align: center;
+        }
+
+        footer {
+        background-color: #ff0000; /* Changer la couleur du fond en rouge (#ff0000) */
+        padding: 30px;
+        text-align: center;
+    }
+
+    footer {
+        font-family: 'Times New Roman', serif; /* Changer la police en Times New Roman pour le titre */
+        color: #fff; /* Changer la couleur du texte en blanc */
+    }
+    </style>
+    <script>
+        function toggleParagraph(sectionId, divId) {
+            var paragraph = document.getElementById(sectionId + '-text');
+            var div = document.getElementById(divId);
+
+            if (paragraph.style.display === "none" || paragraph.style.display === "") {
+                paragraph.style.display = "block";
+                div.style.backgroundColor = "#ccc"; // Change la couleur de fond pour indiquer que la section est ouverte
+            } else {
+                paragraph.style.display = "none";
+                div.style.backgroundColor = "#fff"; // Remet la couleur de fond par défaut
+            }
+        }
